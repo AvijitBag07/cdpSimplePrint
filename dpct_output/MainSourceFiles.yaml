@@ -1,0 +1,401 @@
+---
+MainSourceFile:  '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/MainSrcFiles_placehold'
+Replacements:
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          1563
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          1906
+    Length:          26
+    ReplacementText: 'static dpct::global_memory<int, 0> g_uids(0);'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          2172
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          2245
+    Length:          0
+    ReplacementText: ",\n                const sycl::nd_item<3> &item_ct1, const sycl::stream &stream_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          2255
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          2295
+    Length:          0
+    ReplacementText: "      /*\n      DPCT1015:0: Output needs adjustment.\n      */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          2301
+    Length:          46
+    ReplacementText: 'stream_ct1 << "BLOCK %d launched by the host\n"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          2564
+    Length:          0
+    ReplacementText: "      /*\n      DPCT1015:1: Output needs adjustment.\n      */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          2570
+    Length:          102
+    ReplacementText: 'stream_ct1 << "%sBLOCK %d launched by thread %d of block %d\n"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          2687
+    Length:          15
+    ReplacementText: "/*\n  DPCT1065:20: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n  */\n  item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          3120
+    Length:          11
+    ReplacementText: "/*\nDPCT1109:2: Recursive functions cannot be called in SYCL device code. You need to adjust the code.\n*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          3226
+    Length:          0
+    ReplacementText: ", const sycl::nd_item<3> &item_ct1,\n                           const sycl::stream &stream_ct1, int &g_uids,\n                           int &s_uid"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          3339
+    Length:          21
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          3368
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          3400
+    Length:          21
+    ReplacementText: 'dpct::atomic_fetch_add<sycl::access::address_space::generic_space>(&g_uids, 1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          3430
+    Length:          15
+    ReplacementText: "/*\n  DPCT1065:21: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n  */\n  item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          3561
+    Length:          0
+    ReplacementText: ', item_ct1, stream_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          3679
+    Length:          0
+    ReplacementText: "  /*\n  DPCT1130:3: SYCL 2020 standard does not support dynamic parallelism (launching kernel in device code). Please rewrite the code.\n  */\n  /*\n  DPCT1109:4: Recursive functions cannot be called in SYCL device code. You need to adjust the code.\n  */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          3694
+    Length:          9
+    ReplacementText: 'item_ct1.get_group_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          3705
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          3737
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          3755
+    Length:          0
+    ReplacementText: ', item_ct1, stream_ct1, g_uids, s_uid'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          4708
+    Length:          14
+    ReplacementText: 'dpct::device_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          4807
+    Length:          44
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_device(device).get_device_info(deviceProp))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          4855
+    Length:          0
+    ReplacementText: "  /*\n  DPCT1005:22: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\n  */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          4874
+    Length:          5
+    ReplacementText: 'get_major_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          4887
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1005:23: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          4907
+    Length:          5
+    ReplacementText: 'get_major_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          4932
+    Length:          5
+    ReplacementText: 'get_minor_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          5058
+    Length:          4
+    ReplacementText: 'get_name()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          6014
+    Length:          0
+    ReplacementText: "  /*\n  DPCT1049:5: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n  */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          6016
+    Length:          41
+    ReplacementText: "{\n    g_uids.init();\n\n    dpct::get_in_order_queue().submit(\n      [&](sycl::handler &cgh) {\n        sycl::stream stream_ct1(64 * 1024, 80, cgh);\n\n        auto g_uids_ptr_ct1 = g_uids.get_ptr();\n\n        sycl::local_accessor<int, 0> s_uid_acc_ct1(cgh);\n\n        auto ct3 = -1;\n\n        cgh.parallel_for(\n          sycl::nd_range<3>(sycl::range<3>(1, 1, b) * sycl::range<3>(1, 1, t), sycl::range<3>(1, 1, t)), \n          [=](sycl::nd_item<3> item_ct1) {\n            cdp_kernel(max_depth, 0, 0, ct3, item_ct1, stream_ct1, *g_uids_ptr_ct1, s_uid_acc_ct1);\n          });\n      });\n  }"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          6057
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          6059
+    Length:          0
+    ReplacementText: "  /*\n  DPCT1010:24: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\n  */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          6077
+    Length:          18
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Offset:          6132
+    Length:          23
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_current_device().queues_wait_and_throw())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint/cdpSimplePrint.cu'
+    Digest:          9931119f60ef825d727c958aa514ae79
+    HasCUDASyntax:   true
+DpctVersion:     19.0.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/nfs/site/home/abagx/Avijit/cuda-samples'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  BuildScript:
+    Value:           '0'
+    Specified:       false
+  CodePinEnabled:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           '/nfs/site/home/abagx/Avijit/cuda-samples/Samples/3_CUDA_Features/cdpSimplePrint'
+    Specified:       true
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  HelperFuncPreferenceFlag:
+    Value:           '0'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UseSYCLCompat:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...
